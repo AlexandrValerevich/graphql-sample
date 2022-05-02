@@ -15,7 +15,7 @@ public class UserType : ObjectType<User>
         descriptor.Description("Represents our user.");
 
         descriptor.Field(u => u.Id)
-                  .Description("Represents the unique Id for the platphorm.");
+                  .Description("Represents the unique Id for the user.");
 
         descriptor.Field(u => u.FirstName)
                   .Description("Represents the First Name of user.");
