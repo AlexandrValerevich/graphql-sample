@@ -10,7 +10,7 @@ public class IdentityDbContext : DbContext
     }
 
     public DbSet<User> Users { get; set; }
-    public DbSet<Role> Role { get; set; }
+    public DbSet<Role> Roles { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
