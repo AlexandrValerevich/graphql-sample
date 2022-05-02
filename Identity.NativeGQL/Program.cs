@@ -11,6 +11,6 @@ builder.Services.AddDbContext<IdentityDbContext>(options =>
 
 var app = builder.Build();
 
-app.MapGet("/", () => "Hello World!");
+app.UseGraphQLGraphiQL();
 
 app.Run();

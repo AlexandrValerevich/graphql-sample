@@ -6,11 +6,15 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="GraphQL" Version="5.1.1" />
+    <PackageReference Include="GraphQL.NewtonsoftJson" Version="5.1.1" />
+    <PackageReference Include="GraphQL.Server.Ui.GraphiQL" Version="6.0.0" />
+    <PackageReference Include="GraphQL.SystemTextJson" Version="5.1.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.4">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
