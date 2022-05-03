@@ -17,30 +17,25 @@ public static class Seed
         var newUsers = new List<User>{
             new User
             {
-                Id = 1,
                 FirstName = "Alexander",
                 LastName = "Nesterovich",
                 Roles = new List<Role>
                 {
                     new Role(){
-                        Id = 1,
                         Name = "Admin"
                     },
                     new Role(){
-                        Id =2,
                         Name = "Hasbend"
                     }
                 },
             },
             new User
             {
-                Id = 2,
                 FirstName = "Viktoria",
                 LastName = "Borisenko",
                 Roles = new List<Role>
                 {
                     new Role(){
-                        Id = 3,
                         Name = "Wife"
                     }
                 },

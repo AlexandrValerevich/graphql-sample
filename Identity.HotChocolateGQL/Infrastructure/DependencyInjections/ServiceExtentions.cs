@@ -24,17 +24,17 @@ public static class ServiceExtentions
         services
             .AddGraphQLServer()
             .AddQueryType<IdentityQuery>()
-            // .AddMutationType<Mutation>()
+            .AddMutationType<IdentityMutation>()
             // .AddSubscriptionType<Subscription>()
             .AddType<UserType>()
-            // .AddType<AddPlatformInputType>()
-            // .AddType<AddPlatformPayloadType>()
+            .AddType<AddUserInputType>()
+            .AddType<AddUserPayloadType>()
             .AddType<RoleType>()
             //.AddType<AddCommandInputType>()
             //.AddType<AddCommandPayloadType>()
             .AddFiltering()
-            .AddSorting()
-            .AddInMemorySubscriptions();
+            .AddSorting();
+        //.AddInMemorySubscriptions();
 
         return services;
     }

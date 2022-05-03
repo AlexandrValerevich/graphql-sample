@@ -5,7 +5,7 @@ namespace Identity.DAL.Models;
 public class User
 {
     [Key]
-    public int Id { get; set; }
+    public int Id { get; set; } = default;
 
     [Required]
     public string FirstName { get; set; }

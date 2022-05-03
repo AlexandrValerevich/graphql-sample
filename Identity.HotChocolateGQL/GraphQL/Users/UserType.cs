@@ -9,7 +9,6 @@ public class UserType : ObjectType<User>
 {
     protected override void Configure(IObjectTypeDescriptor<User> descriptor)
     {
-        base.Configure(descriptor);
 
         // Description whole object
         descriptor.Description("Represents our user.");
@@ -27,6 +26,8 @@ public class UserType : ObjectType<User>
                 .ResolveWith<Resolvers>(p => p.GetRoles(default!, default!))
                 .UseDbContext<IdentityDbContext>()
                 .Description("This is the list of roles.");
+        
+        base.Configure(descriptor);
     }
 
     private class Resolvers
